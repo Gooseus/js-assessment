@@ -1,5 +1,5 @@
 if ( typeof window === 'undefined' ) {
-  require('../../app/bestPractices');
+  window = require('../../app/bestPractices');
   var expect = require('chai').expect;
 }
 
