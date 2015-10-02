@@ -11,5 +11,19 @@ exports.flowControlAnswers = {
     // otherwise the function should return the number, or false if no number
     // was provided or the value provided is not a number
 
+    var mod3 = (num % 3) == 0,
+        mod5 = (num % 5) == 0;
+
+    if(mod3 && mod5) {
+        return "fizzbuzz";
+    }
+    if(mod3) {
+        return "fizz";
+    }
+    if(mod5) {
+        return "buzz";
+    }
+
+    return isNaN(num) ? false : num;
   }
 };
